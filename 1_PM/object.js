@@ -3,5 +3,16 @@
 // HINT: recursion may help here
 
 const hasFalsyValue = obj => {
+  for (let property in obj){
+    if (obj.hasOwnProperty(property) === false) {
+      return true;
+    }
+  }
   return false;
 };
+
+const test = ["hello", "cool", "123", "true", true];
+const test2 = [0];
+
+console.log(hasFalsyValue(test))
+console.log(hasFalsyValue(test2))

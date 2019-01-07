@@ -3,12 +3,16 @@
 
 const arr = [0, 1, 2, 3, 4];
 
-const triple = () => {
-  // TODO
+const triple = el =>{
+  return (3 * el);
 };
 
-Array.prototype.map = function(fun) {
-  // TODO
+Array.prototype.map = function(fun){
+  let newArr = [];
+  this.forEach(el =>{
+    newArr.push(fun(el));
+  })
+  return newArr;
 };
 
 console.log(arr.map(triple));

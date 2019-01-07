@@ -16,3 +16,9 @@ const getUser = callback => {
   };
   callback(user);
 };
+
+getUser(user => {
+  coinToss(user.guess, console.log());
+})
+
+
