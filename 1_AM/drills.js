@@ -12,9 +12,9 @@ console.log(tokenize("This is my message"));
 const reverse = str => {
   // TODO - write a function which reverses the string
   let reversed = "";
-  for (let i = str.length; i > -1; i--) {
+  console.log(reversed);
+  for (let i = str.length - 1; i > -1; i--) {
     reversed += str[i];
-    console.log(reversed);
   }
   return reversed;
 }
@@ -77,7 +77,7 @@ const shiftRight = (str, num) => {
 };
 console.log(shiftRight("Hello", 8));
 
-const announceDate = () => {
+/*const announceDate = () => {
   // TODO - write a function which returns the current date in the following format:
   // "Today's date is January 7th, 2016. It is eleven thirty-seven in the morning."
   let now = new Date():
@@ -86,7 +86,7 @@ const announceDate = () => {
   
   return ("Today's date is ${}. It is ${} in the morning") 
 };
-
+*/
 
 // Write tests here:
 
