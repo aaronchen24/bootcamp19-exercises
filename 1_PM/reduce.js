@@ -10,7 +10,7 @@ const sum = (acc, cur) => {
 
 Array.prototype.reduce = function(fun, init) {
     this.forEach(el => {
-        fun(0, 0)
+        
     });
 };
 
